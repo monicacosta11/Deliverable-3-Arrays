@@ -21,23 +21,19 @@ namespace Deliverable_3_Arrays
 
             try
             {
-                // n is an array of 25 integers
-                int[] array = new int[25];
-                int i, j;
-
-                /* initialize elements of array n */
-                for (i = 1; i < 25; i++)
+                //Automatically populate an array with 25 elements in in
+                int[] count = new int[26];
+                int pop_array = 26;
+                
+                //Iterate through the array using a For loop
+                for(int i = 1; i < 26; i++ )
                 {
-                    array[i] = i;
+                    count[i] = pop_array;
+                    Console.WriteLine("The element value = " + i + " ");
+                   
                 }
 
-                /* output each array element's value */
-                for (j = 1; j < 25; j++)
-                {
-                    Console.WriteLine("Element = {1}", j, array[j]);
-                }
-                Console.ReadKey();
-
+                Console.ReadKey(true);
 
             } //End of try
 
